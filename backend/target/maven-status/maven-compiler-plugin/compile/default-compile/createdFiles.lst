@@ -1,0 +1,7 @@
+com\example\backend\controller\merchantController.class
+com\example\backend\Service\MerchantService.class
+com\example\backend\model\Merchant.class
+com\example\backend\repository.class
+com\example\backend\exception\ResourceNotFoundException.class
+com\example\backend\MerchantRepository.class
+com\example\backend\BackendApplication.class
