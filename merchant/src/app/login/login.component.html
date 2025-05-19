@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <div class="card">
+    <h1 class="text-center" style="color: brown">Login</h1>
+
+    <form class="container bg-light" style="padding: 1%">
+      <div class="form-group">
+        <label> Merchant ID</label>
+        <input
+          type="number"
+          [(ngModel)]="merchant.mid"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          placeholder="Enter your ID"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input
+          type="password"
+          [(ngModel)]="merchant.password"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          placeholder="Password"
+        />
+      </div>
+
+      <div class="text-center">
+        <p>
+          Not a memeber?<button type="submit" (click)="Signup()">
+            Sign up
+          </button>
+        </p>
+      </div>
+
+      <!-- when click the button ,it goes to the .ts file , .ts file has the logics -->
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="Login(merchant.mid, merchant.password)"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>
